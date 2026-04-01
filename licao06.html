@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eschaton · Licao 06 — Israel e a Profecia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--cor:#a09020;--grad1:#1a1a08;--grad2:#282808;--ouro:#c9a84c;--ouro-claro:#e8d5a0;--vermelho:#8b1a1a;--ct:#2a2a2a;--branco:#fdfbf7;--creme:#f5f0e8;--cc:#e0ddd8;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#111;font-family:'EB Garamond',Georgia,serif;}
+.painel{position:fixed;top:0;left:0;right:0;z-index:9999;background:linear-gradient(90deg,#0a0a0a,#1a1a1a);border-bottom:1px solid rgba(160,144,32,0.5);padding:10px 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.marca{font-family:'Cinzel',serif;font-size:12pt;color:var(--ouro);letter-spacing:3px;margin-right:auto;}
+.marca span{font-family:'Oswald',sans-serif;font-size:8pt;color:#666;letter-spacing:1px;display:block;font-weight:300;}
+.btn{font-family:'Oswald',sans-serif;font-size:9pt;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:pointer;padding:7px 16px;border-radius:2px;transition:all 0.2s;white-space:nowrap;}
+.be{background:transparent;color:var(--ouro);border:1px solid rgba(201,168,76,0.4);}.be:hover{background:var(--ouro);color:#111;}
+.bi{background:var(--vermelho);color:#fff;}.bi:hover{filter:brightness(1.2);}
+.bv{background:transparent;color:#666;border:1px solid #333;font-size:8pt;}.bv:hover{color:#fff;border-color:#666;}
+.area{margin-top:60px;padding:24px 16px 60px;display:flex;flex-direction:column;align-items:center;gap:16px;}
+@page{size:A5 portrait;margin:0;}
+.pag{width:148mm;min-height:210mm;background:var(--branco);box-shadow:0 6px 30px rgba(0,0,0,0.5);position:relative;overflow:hidden;page-break-after:always;flex-shrink:0;}
+.lbl{font-family:'Oswald',sans-serif;font-size:8pt;color:#555;letter-spacing:2px;text-transform:uppercase;align-self:flex-start;margin-left:calc(50% - 74mm);margin-bottom:-8px;}
+.capa{background:linear-gradient(160deg,var(--grad1),var(--grad2));display:flex;flex-direction:column;justify-content:flex-end;min-height:210mm;padding:0;}
+.catm{position:absolute;inset:0;background:radial-gradient(ellipse at 25% 60%,rgba(160,144,32,0.4) 0%,transparent 55%),radial-gradient(ellipse at 78% 22%,rgba(201,168,76,0.2) 0%,transparent 45%),radial-gradient(ellipse at 55% 85%,rgba(100,80,0,0.3) 0%,transparent 50%);}
+.cgrd{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.015) 1px,transparent 1px);background-size:18px 18px;}
+.cfx{position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,#3a3000,var(--cor),var(--ouro));}
+.cnbg{position:absolute;bottom:-20px;right:-10px;font-family:'Cinzel',serif;font-size:130pt;font-weight:900;color:rgba(255,255,255,0.03);line-height:1;user-select:none;}
+.cimg{position:absolute;top:0;left:0;right:0;height:58%;background:linear-gradient(160deg,#0d0d00,var(--cor) 50%,#ffe060);opacity:0.38;}
+.clh{position:absolute;top:55%;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,#3a3000,var(--cor),var(--ouro),transparent);opacity:0.7;}
+.ccon{position:relative;z-index:3;padding:0 12mm 14mm 18mm;}
+.cser{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:4px;color:var(--ouro);text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.cser::before{content:'';display:block;width:20px;height:1px;background:var(--ouro);}
+.cnd{font-family:'Cinzel',serif;font-size:36pt;font-weight:900;color:#fff;opacity:0.1;position:absolute;top:20mm;right:12mm;line-height:1;}
+.ctit{font-family:'Cinzel',serif;font-size:24pt;font-weight:700;color:#fff;line-height:1.1;text-transform:uppercase;margin-bottom:12px;}
+.cver{font-family:'EB Garamond',serif;font-style:italic;font-size:10pt;color:var(--ouro-claro);line-height:1.6;border-left:2px solid var(--ouro);padding-left:10px;opacity:0.9;}
+.int{padding:14mm 12mm 18mm 14mm;min-height:210mm;position:relative;background:var(--branco);}
+.int::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#3a3000,var(--cor),var(--ouro) 70%,transparent);}
+.wm{position:absolute;bottom:14mm;right:10mm;font-family:'Cinzel',serif;font-size:52pt;font-weight:900;color:rgba(0,0,0,0.035);line-height:1;user-select:none;pointer-events:none;}
+.ph{margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--cc);display:flex;justify-content:space-between;align-items:baseline;}
+.phl{font-family:'Oswald',sans-serif;font-size:7.5pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;}
+.pht{font-family:'EB Garamond',serif;font-style:italic;font-size:8.5pt;color:#aaa;}
+h2{font-family:'Oswald',sans-serif;font-weight:600;font-size:12pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);border-left:4px solid var(--cor);padding-left:10px;margin-bottom:12px;margin-top:4px;line-height:1.2;}
+h3{font-family:'Oswald',sans-serif;font-weight:400;font-size:10pt;letter-spacing:1px;color:var(--ct);text-transform:uppercase;margin-bottom:6px;margin-top:12px;}
+p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--ct);text-align:justify;margin-bottom:9px;hyphens:auto;}
+.cap::first-letter{font-family:'Cinzel',serif;font-size:38pt;font-weight:900;float:left;margin-right:5px;color:var(--cor);line-height:0.82;padding-top:2px;}
+.bver{background:var(--creme);border-left:3px solid var(--ouro);padding:10px 12px;margin:12px 0;font-style:italic;font-size:10pt;color:#555;line-height:1.55;font-family:'EB Garamond',serif;}
+.bver cite{display:block;font-size:8.5pt;font-style:normal;color:var(--ouro);margin-top:4px;font-family:'Oswald',sans-serif;letter-spacing:1px;}
+.bvp{border:1px solid rgba(160,144,32,0.35);background:rgba(160,144,32,0.05);border-radius:3px;padding:10px 12px;margin:10px 0;}
+.bvr{border:1px solid rgba(201,168,76,0.35);background:rgba(201,168,76,0.04);border-radius:3px;padding:10px 12px;margin:10px 0;}
+.vl{font-family:'Oswald',sans-serif;font-size:7.5pt;letter-spacing:2px;text-transform:uppercase;margin-bottom:5px;font-weight:600;}
+.bvp .vl{color:var(--cor);}.bvr .vl{color:#8a6a20;}
+.vt{font-family:'EB Garamond',serif;font-size:10pt;line-height:1.55;color:var(--ct);}
+.sep{display:flex;align-items:center;gap:10px;margin:12px 0;opacity:0.35;}
+.sep::before,.sep::after{content:'';flex:1;height:1px;background:var(--cc);}
+.sep span{font-size:8pt;color:var(--ouro);}
+.obj{background:var(--creme);border-radius:3px;padding:10px 12px;margin:10px 0;}
+.obj .ot{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.obj ul{list-style:none;padding:0;}
+.obj ul li{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);padding:2px 0 2px 14px;position:relative;line-height:1.4;}
+.obj ul li::before{content:'&#8594;';position:absolute;left:0;color:var(--cor);font-size:9pt;}
+.apl{background:linear-gradient(135deg,rgba(160,144,32,0.06),rgba(201,168,76,0.07));border:1px solid rgba(160,144,32,0.25);border-radius:3px;padding:10px 12px;margin:10px 0;}
+.apl .at{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
+.q{margin-bottom:14px;}
+.qn{font-family:'Oswald',sans-serif;font-size:8pt;color:var(--cor);letter-spacing:2px;text-transform:uppercase;margin-bottom:3px;}
+.qt{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);line-height:1.45;margin-bottom:5px;}
+.lr{border-bottom:1px solid #ddd;height:20px;margin-top:3px;}
+.lit{margin-top:10px;padding-top:10px;border-top:1px solid var(--cc);}
+.lit .lt{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;color:var(--ouro);text-transform:uppercase;margin-bottom:6px;}
+.lit ul{list-style:none;padding:0;}
+.lit ul li{font-family:'EB Garamond',serif;font-size:9.5pt;color:#666;padding:1px 0 1px 12px;position:relative;}
+.lit ul li::before{content:'&#183;';position:absolute;left:2px;color:var(--ouro);}
+.rod{position:absolute;bottom:0;left:0;right:0;padding:6px 12mm 6mm 14mm;display:flex;justify-content:space-between;align-items:center;}
+.rod::before{content:'';position:absolute;top:0;left:12mm;right:12mm;height:1px;background:linear-gradient(90deg,var(--cor),var(--ouro),transparent);opacity:0.3;}
+.rt{font-family:'Oswald',sans-serif;font-size:7pt;color:#bbb;letter-spacing:1px;text-transform:uppercase;}
+.rn{font-family:'Cinzel',serif;font-size:9pt;color:var(--ouro);}
+.lins{display:flex;flex-direction:column;gap:18px;margin-top:10px;}
+.lin{border-bottom:1px solid #ddd;height:22px;}
+[contenteditable="true"]{outline:none;cursor:text;}
+[contenteditable="true"]:hover{background:rgba(160,144,32,0.05);border-radius:2px;}
+[contenteditable="true"]:focus{background:rgba(160,144,32,0.09);border-radius:2px;}
+@media print{
+    body{background:none;}
+    .painel,.lbl{display:none!important;}
+    .area{margin-top:0;padding:0;gap:0;}
+    .pag{box-shadow:none;page-break-after:always;page-break-inside:avoid;}
+    .wm{display:none;}
+}
+</style>
+</head>
+<body>
+
+<div class="painel">
+    <div class="marca">ESCHATON<span>Licao 06 &middot; Israel e a Profecia</span></div>
+    <button class="btn be" onclick="toggleEdit()">&#9998; <span id="etxt">Editar</span></button>
+    <button class="btn bi" onclick="window.print()">&#128438; Imprimir</button>
+    <a href="index.html"><button class="btn bv">&#8592; Hub</button></a>
+</div>
+
+<div class="area">
+
+<!-- PG 1 CAPA -->
+<div class="lbl">Pagina 1 &middot; Capa</div>
+<div class="pag capa">
+    <div class="catm"></div><div class="cgrd"></div><div class="cfx"></div>
+    <div class="cimg"></div><div class="clh"></div>
+    <div class="cnbg">06</div><div class="cnd">06</div>
+    <div class="ccon">
+        <div class="cser">Serie &middot; Eschaton &middot; Estudos Escatologicos</div>
+        <div class="ctit">Israel e a Profecia</div>
+        <div class="cver">
+            "Porque nao quero, irmaos, que ignoreis este misterio, para que nao presumais de vos mesmos: que o endurecimento veio em parte sobre Israel, ate que a plenitude dos gentios haja entrado."
+            <span style="display:block;margin-top:4px;font-style:normal;font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:1px;color:var(--ouro);">Romanos 11:25</span>
+        </div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton &middot; EBD Jovens Adultos</span><span class="rn">1</span></div>
+</div>
+
+<!-- PG 2 INTRODUCAO -->
+<div class="lbl">Pagina 2 &middot; Introducao</div>
+<div class="pag int">
+    <div class="wm">2</div>
+    <div class="ph"><span class="phl">Licao 06</span><span class="pht">Israel e a Profecia</span></div>
+    <h2>Introducao</h2>
+    <p class="cap">Em 14 de maio de 1948, o Estado de Israel foi proclamado — e o mundo evangelico brasileiro entrou em efervescencia profetica. Para muitos, a restauracao nacional judaica era o cumprimento literal de Ezequiel 37 e o "sinal da figueira" de Mateus 24:32. Para outros, era um evento politico importante, mas sem significado profetico especial. Essa divisao toca o coracao do debate escatologico contemporaneo: qual e o papel de Israel no plano profético de Deus?</p>
+    <div class="bver">"Assim diz o Senhor Deus: Eis que eu tomarei os filhos de Israel dentre as nacoes para onde foram... e os congregarei de todos os lados, e os trarei para a sua propria terra." <cite>Ezequiel 37:21</cite></div>
+    <div class="obj">
+        <div class="ot">Objetivos desta licao</div>
+        <ul>
+            <li>Compreender o pacto abraamico e suas implicacoes profeticas para Israel</li>
+            <li>Examinar Romanos 9-11 como texto central sobre o futuro de Israel</li>
+            <li>Analisar a relacao entre Israel e Igreja nas duas grandes tradicoes teologicas</li>
+            <li>Avaliar o significado do Estado de Israel (1948) para a escatologia crista</li>
+        </ul>
+    </div>
+    <div class="sep"><span>&#10022;</span></div>
+    <p>Nenhum outro topico da escatologia tem implicacoes tao diretas para a politica, a etica crista e o relacionamento com o judaismo quanto este. Por isso, um estudo rigoroso — mais do que uma afirmacao apressada de qualquer lado — e o caminho mais honesto e frutifero.</p>
+    <div class="rod"><span class="rt">Eschaton &middot; EBD Jovens Adultos</span><span class="rn">2</span></div>
+</div>
+
+<!-- PG 3 DESENVOLVIMENTO I -->
+<div class="lbl">Pagina 3 &middot; Desenvolvimento I</div>
+<div class="pag int">
+    <div class="wm">3</div>
+    <div class="ph"><span class="phl">Licao 06</span><span class="pht">Israel e a Profecia</span></div>
+    <h2>I. O Pacto e as Promessas</h2>
+    <p>O ponto de partida e inevitavel: o pacto de Deus com Abraao em Genesis 12:1-3 e 15:18-21. Deus promete a Abraao uma terra, uma descendencia e uma bencao que alcancara todas as familias da terra. A questao teologica central e: essas promessas sao cumpridas <em>literalmente</em> no povo etnico judaico e na terra geografica de Canaa, ou sao cumpridas <em>tipologicamente</em> em Cristo e na Igreja?</p>
+    <h3>O Pacto Abraamico: Condicional ou Incondicional?</h3>
+    <p>O dispensacionalismo afirma que o pacto abraamico e incondicionalmente eterno — as promessas territoriais e nacionais a Israel nao foram transferidas para a Igreja e aguardam cumprimento literal no reino milenial. A teologia da alianca reformada entende que as promessas encontram seu "sim e amen" em Cristo (2 Co 1:20) — a terra de Canaa era tipo da heranca eterna e celestial (Hb 11:10,16).</p>
+    <div class="bver">"Porque todas as promessas de Deus sao nele sim, e nele amen, para gloria de Deus por nos." <cite>2 Corintios 1:20</cite></div>
+    <h3>Os Profetas e a Restauracao de Israel</h3>
+    <p>Ezequiel 36-37, Zacarias 12-14 e Jeremias 31 descrevem a restauracao de Israel com imagens poderosas. O dispensacionalismo as interpreta como profecias ainda por cumprir-se literalmente. A leitura reformada ve seu cumprimento em Cristo e na missao da Igreja — o "Israel de Deus" ampliado (Gl 6:16) — sem excluir necessariamente uma conversao futura de judeus em grande numero.</p>
+    <div class="rod"><span class="rt">Eschaton &middot; EBD Jovens Adultos</span><span class="rn">3</span></div>
+</div>
+
+<!-- PG 4 DESENVOLVIMENTO II -->
+<div class="lbl">Pagina 4 &middot; Desenvolvimento II</div>
+<div class="pag int">
+    <div class="wm">4</div>
+    <div class="ph"><span class="phl">Licao 06</span><span class="pht">Israel e a Profecia</span></div>
+    <h2>II. Romanos 9-11: O Texto Decisivo</h2>
+    <p>Nenhuma passagem e mais central para esse debate do que Romanos 9-11. Paulo enfrenta diretamente a questao: a palavra de Deus falhou em relacao a Israel? (Rm 9:6). Sua resposta exige atencao cuidadosa — e recusada por simplificacoes de ambos os lados.</p>
+    <h3>O Israel Dentro de Israel</h3>
+    <p>Em Romanos 9:6-8, Paulo afirma que "nem todos os que sao de Israel sao israelitas". Ha um Israel etnico e um Israel espiritual — o remanescente segundo a eleicao da graca (Rm 11:5). A salvacao nunca foi automatica por descendencia fisica; sempre foi pela fe, desde Abraao (Rm 4:11-12).</p>
+    <div class="bver">"E assim todo o Israel sera salvo, como esta escrito: Vira de Siao o Libertador, e desviara de Jaco as impiedades." <cite>Romanos 11:26</cite></div>
+    <div class="sep"><span>&#10022;</span></div>
+    <h3>A Oliveira e os Galhos: Rm 11:17-24</h3>
+    <p>Paulo usa a metafora da oliveira para descrever a relacao entre Israel e a Igreja. Galhos naturais (judeus incrédulos) foram cortados; galhos silvestres (gentios) foram enxertados. Mas os galhos naturais podem ser reenxertados — pois Deus e poderoso para isso (Rm 11:23). Isso sugere uma abertura futura de Israel ao evangelho, sem necessariamente implicar um programa nacional separado da Igreja.</p>
+    <h3>1948: Sinal Profetico ou Evento Politico?</h3>
+    <p>O dispensacionalismo ve na fundacao do Estado de Israel o cumprimento de Ez 37 e o inicio da "geracao" de Mt 24:34. A teologia reformada reconhece o evento como historicamente significativo, mas questiona sua validade como cumprimento profetico especifico — a restauracao prometida pelos profetas era espiritual, nao apenas politica e geografica.</p>
+    <div class="rod"><span class="rt">Eschaton &middot; EBD Jovens Adultos</span><span class="rn">4</span></div>
+</div>
+
+<!-- PG 5 VISOES EM DIALOGO -->
+<div class="lbl">Pagina 5 &middot; Visoes em Dialogo</div>
+<div class="pag int">
+    <div class="wm">5</div>
+    <div class="ph"><span class="phl">Licao 06</span><span class="pht">Israel e a Profecia</span></div>
+    <h2>Visoes em Dialogo</h2>
+    <p>O papel profético de Israel e talvez o ponto de maior ruptura entre o dispensacionalismo pentecostal e a teologia da alianca reformada. As consequencias dessa divergencia se estendem da hermeneutica biblica ate a etica politica contemporanea.</p>
+    <div class="bvp">
+        <div class="vl">&#10022; Perspectiva Pentecostal</div>
+        <div class="vt">Para o pentecostalismo dispensacionalista, Israel e a Igreja sao dois povos distintos de Deus com programas profeticos separados. As promessas territoriais do AT ainda aguardam cumprimento literal no reino milenial. A fundacao do Estado de Israel em 1948 e sinal profetico inequivoco. Israel sera o centro do reino de Cristo durante o milenio. Os 144.000 de Apocalipse 7 sao judeus literais que evangelizarao o mundo durante a Tribulacao. Essa visao fundamenta um forte apoio evangelico ao Estado de Israel como obrigacao teologica.</div>
+    </div>
+    <div class="bvr">
+        <div class="vl">&#10022; Perspectiva Reformada</div>
+        <div class="vt">Para a teologia da alianca, Israel e a Igreja formam um unico povo de Deus sob aliancas progressivas — a Igreja nao substituiu Israel, mas e o cumprimento e expansao do Israel biblico (Rm 11; Gl 3:29; Ef 2:11-22). As promessas territoriais encontram seu cumprimento em Cristo e na nova criacao (Hb 11:10,16). Romanos 11:26 aponta para uma conversao futura em grande numero de judeus ao evangelho — nao para um programa nacional separado. Apoio politico a Israel nao e mandato teologico, mas questao de etica e justica como qualquer outra nacao.</div>
+    </div>
+    <div class="sep"><span>&#10022;</span></div>
+    <p>Ambas as tradicoes afirmam o amor de Deus pelo povo judeu, o cumprimento das promessas abraamicas em Cristo, e a abertura do evangelho para todos — judeus e gentios — como a grande missao da Igreja ate o fim dos tempos.</p>
+    <div class="rod"><span class="rt">Eschaton &middot; EBD Jovens Adultos</span><span class="rn">5</span></div>
+</div>
+
+<!-- PG 6 APLICACAO -->
+<div class="lbl">Pagina 6 &middot; Aplicacao Pratica</div>
+<div class="pag int">
+    <div class="wm">6</div>
+    <div class="ph"><span class="phl">Licao 06</span><span class="pht">Israel e a Profecia</span></div>
+    <h2>Aplicacao Pratica</h2>
+    <p>A teologia sobre Israel tem consequencias eticas reais e imediatas. Quando a escatologia determina posicoes politicas sem espaco para nuances, o resultado pode ser um apoio acritico a acoes injustas, ou uma rejeicao igualmente acritica de um povo com historia e dignidade proprias. O cristao maduro precisa separar convicoes teologicas de posicionamentos politicos automaticos.</p>
+    <div class="apl">
+        <div class="at">Para a sua semana</div>
+        <p>Primeiro: leia Romanos 11 completo de uma vez — sem parar para debater — e deixe Paulo falar sobre o misterio da historia da salvacao em sua propria voz. Segundo: reflita sobre como sua posicao sobre Israel foi formada — pela exegese cuidadosa ou pela tradicao de sua denominacao e pelos pregadores que voce ouve? Terceiro: ore pelo povo judeu como Paulo fazia (Rm 10:1) — nao como peca de um tabuleiro profetico, mas como pessoas pelas quais Cristo morreu.</p>
+    </div>
+    <div class="sep"><span>&#10022;</span></div>
+    <h3>Para Refletir</h3>
+    <p>Paulo escreve: "a dureza veio em parte sobre Israel, ate que a plenitude dos gentios haja entrado" (Rm 11:25). Isso sugere que a missao entre os gentios — incluindo nos, brasileiros — faz parte do plano de Deus para provocar ciume em Israel (Rm 11:11). Como isso deve moldar a urgencia missionaria da sua Igreja?</p>
+    <div class="bver">"Porque nao ha distincao entre judeu e grego; porque um mesmo e o Senhor de todos, rico para todos os que o invocam." <cite>Romanos 10:12</cite></div>
+    <p>Na proxima licao enfrentaremos uma das controversias mais antigas do protestantismo: <strong>O Milenio</strong> — pre, a e pos-milenismo em perspectiva comparada.</p>
+    <div class="rod"><span class="rt">Eschaton &middot; EBD Jovens Adultos</span><span class="rn">6</span></div>
+</div>
+
+<!-- PG 7 QUESTOES -->
+<div class="lbl">Pagina 7 &middot; Questoes e Anotacoes</div>
+<div class="pag int">
+    <div class="wm">7</div>
+    <div class="ph"><span class="phl">Licao 06</span><span class="pht">Israel e a Profecia</span></div>
+    <h2>Questoes para Reflexao</h2>
+    <div class="q">
+        <div class="qn">Questao 01</div>
+        <div class="qt">O pacto abraamico e condicional ou incondicional? Como a resposta a essa pergunta muda completamente a leitura das profecias sobre Israel no Antigo Testamento?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 02</div>
+        <div class="qt">Em Romanos 9:6, Paulo afirma que "nem todos os que sao de Israel sao israelitas". O que ele quer dizer? Como isso afeta a leitura de Romanos 11:26 — "todo o Israel sera salvo"?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 03</div>
+        <div class="qt">O dispensacionalismo ve na fundacao do Estado de Israel em 1948 o cumprimento de Ezequiel 37. A teologia da alianca discorda. Quais argumentos exegeticos cada lado apresenta? Com qual voce se identifica mais?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="q">
+        <div class="qn">Questao 04</div>
+        <div class="qt">Paulo diz que a missao entre os gentios e parte do plano de Deus para provocar ciume em Israel (Rm 11:11-14). Como isso deve moldar a visao missionaria da sua Igreja local?</div>
+        <div class="lr"></div><div class="lr"></div>
+    </div>
+    <div class="lit">
+        <div class="lt">Leituras Complementares</div>
+        <ul>
+            <li>John Stott — Romans (exposicao de Rm 9-11, perspectiva evangelical equilibrada)</li>
+            <li>Barry Horner — Future Israel (defesa dispensacionalista do papel futuro de Israel)</li>
+            <li>Leitura devocional: Genesis 12:1-3 + Romanos 9-11 completo + Galatas 3:26-29</li>
+        </ul>
+    </div>
+    <h3 style="margin-top:12px;">Anotacoes</h3>
+    <div class="lins">
+        <div class="lin"></div><div class="lin"></div><div class="lin"></div><div class="lin"></div>
+    </div>
+    <div class="rod"><span class="rt">Eschaton &middot; EBD Jovens Adultos</span><span class="rn">7</span></div>
+</div>
+
+</div>
+<script>
+let edit=false;
+const TAGS=['P','H2','H3','DIV','LI','CITE','SPAN','STRONG','EM'];
+function toggleEdit(){
+    edit=!edit;
+    document.querySelectorAll('.pag *').forEach(el=>{
+        if(TAGS.includes(el.tagName)&&!el.querySelector('div,p,h2,h3,ul'))
+            el.contentEditable=edit?'true':'false';
+    });
+    document.getElementById('etxt').textContent=edit?'Concluir':'Editar';
+}
+</script>
+</body>
+</html>
