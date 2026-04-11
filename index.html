@@ -578,24 +578,33 @@ body {
 </footer>
 
 <script>
-// Gera estrelas aleatórias
-const stars = document.getElementById('stars');
-for (let i = 0; i < 120; i++) {
-    const s = document.createElement('div');
-    s.className = 'star';
-    const size = Math.random() * 2.5 + 0.5;
-    s.style.cssText = `
-        width: ${size}px;
-        height: ${size}px;
-        top: ${Math.random() * 100}%;
-        left: ${Math.random() * 100}%;
-        --d: ${2 + Math.random() * 4}s;
-        --delay: ${Math.random() * 4}s;
-        --op: ${0.3 + Math.random() * 0.7};
-    `;
-    stars.appendChild(s);
+// LINKS OFICIAIS - Agora os botões sabem para onde ir
+const ESCHATON_ROUTES = {
+    volume1: 'https://igrejamanancialdevida.github.io/li-esebd/',
+    volume2: 'https://igrejamanancialdevida.github.io/li-esebd-v.2-/',
+    volume3: 'https://igrejamanancialdevida.github.io/li-esebd-v.3/'
+};
+
+const ESCHATON_CURRENT_VOLUME = 'volume3';
+
+function configurarIntegracaoVolumes() {
+    document.querySelectorAll('[data-volume-link]').forEach((elemento) => {
+        const destino = elemento.getAttribute('data-volume-link');
+        const rota = ESCHATON_ROUTES[destino];
+        if (rota) {
+            elemento.setAttribute('href', rota);
+            // Garante que o clique funcione mesmo com bloqueios de segurança
+            elemento.onclick = (e) => { 
+                e.preventDefault();
+                window.location.href = rota; 
+            };
+        }
+    });
 }
+
+document.addEventListener('DOMContentLoaded', configurarIntegracaoVolumes);
 </script>
+
 <script src="https://igrejamanancialdevida.github.io/li-esebd/navegacao.js"></script>
 </body>
 </html>
