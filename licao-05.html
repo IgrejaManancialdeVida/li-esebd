@@ -60,7 +60,13 @@ p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--
 .obj .ot{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
 .obj ul{list-style:none;padding:0;}
 .obj ul li{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);padding:2px 0 2px 14px;position:relative;line-height:1.4;}
-.obj ul li::before{content:'&#8594;';position:absolute;left:0;color:var(--cor);font-size:9pt;}
+ul li::before { 
+    content: '\2192' !important; 
+    position: absolute; 
+    left: 0; 
+    color: var(--cor); 
+    font-size: 9pt; 
+}
 .apl{background:linear-gradient(135deg,rgba(160,48,48,0.06),rgba(201,168,76,0.06));border:1px solid rgba(160,48,48,0.2);border-radius:3px;padding:10px 12px;margin:10px 0;}
 .apl .at{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
 .q{margin-bottom:14px;}
