@@ -60,10 +60,11 @@ p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--
 .obj ul li{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);padding:2px 0 2px 14px;position:relative;line-height:1.4;}
 ul li::before { 
     content: '\2192' !important; 
-    position: absolute; 
-    left: 0; 
-    color: var(--cor); 
-    font-size: 9pt; 
+    position: absolute !important; 
+    left: 0 !important; 
+    color: var(--cor) !important; 
+    font-size: 9pt !important; 
+    display: inline-block !important;
 }
 .apl{background:linear-gradient(135deg,rgba(160,144,32,0.06),rgba(201,168,76,0.07));border:1px solid rgba(160,144,32,0.25);border-radius:3px;padding:10px 12px;margin:10px 0;}
 .apl .at{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
