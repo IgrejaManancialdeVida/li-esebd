@@ -64,28 +64,26 @@ p{font-family:'EB Garamond',serif;font-size:10.5pt;line-height:1.65;color:var(--
 .obj .ot{font-family:'Oswald',sans-serif;font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--cor);margin-bottom:6px;}
 .obj ul{list-style:none;padding:0;}
 .obj ul li{font-family:'EB Garamond',serif;font-size:10pt;color:var(--ct);padding:2px 0 2px 14px;position:relative;line-height:1.4;}
-.obj ul {
-    list-style: none;
-    padding: 0;
-}
+/* Correção definitiva para Lição 13 */
 
-.obj ul li {
-    font-family: 'EB Garamond', serif;
-    font-size: 10pt;
-    color: var(--ct);
-    padding: 2px 0 2px 20px; /* Aumentei o espaço para a seta caber */
-    position: relative;
-    line-height: 1.4;
-}
-
-.obj ul li::before {
-    content: '\2192' !important; /* Apenas uma seta */
+/* 1. Seta dos Objetivos e Itens de Síntese */
+.obj ul li::before, 
+.sintese-item::before {
+    content: '\2192' !important; 
     position: absolute !important;
-    left: 0 !important; /* Alinhado à esquerda do texto */
+    left: 0 !important;
     color: var(--cor) !important;
     font-size: 11pt !important;
-    font-weight: bold !important;
+    visibility: visible !important;
     display: inline-block !important;
+}
+
+/* 2. Pontos das Leituras Finais */
+.lit ul li::before {
+    content: '\2022' !important;
+    position: absolute !important;
+    left: 0 !important;
+    color: var(--ouro) !important;
     visibility: visible !important;
 }
 .apl{background:linear-gradient(135deg,rgba(192,144,48,0.07),rgba(201,168,76,0.07));border:1px solid rgba(192,144,48,0.25);border-radius:3px;padding:10px 12px;margin:10px 0;}
